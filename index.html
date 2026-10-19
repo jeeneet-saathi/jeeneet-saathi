@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JEE NEET साथी</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101827;
+  color: white;
+  text-align: center;
+}
+header {
+  background: #176bdb;
+  padding: 24px 10px;
+}
+h1 { margin: 0; }
+.card {
+  background: #1e293b;
+  margin: 18px;
+  padding: 20px;
+  border-radius: 15px;
+}
+button {
+  background: #16a34a;
+  color: white;
+  border: 0;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin: 6px;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>📚 JEE NEET साथी</h1>
+  <p>सीखो • अभ्यास करो • आगे बढ़ो</p>
+</header>
+<div class="card">
+  <h2>नमस्ते विद्यार्थी! 👋</h2>
+  <p>तुम्हारी सफलता की तैयारी यहीं से शुरू होती है।</p>
+</div>
+<div class="card">
+  <h2>📘 विषय चुनो</h2>
+  <button onclick="quiz('भौतिक विज्ञान')">भौतिक विज्ञान</button>
+  <button onclick="quiz('रसायन विज्ञान')">रसायन विज्ञान</button>
+  <button onclick="quiz('गणित')">गणित</button>
+</div>
+<div class="card">
+  <h2>🎯 अभ्यास</h2>
+  <p id="result">अपना विषय चुनकर शुरुआत करो।</p>
+</div>
+<script>
+function quiz(subject) {
+  document.getElementById("result").innerText =
+    "बहुत बढ़िया! आपने " + subject +
+    " चुना है। अभ्यास प्रश्न जल्द जोड़ेंगे।";
+}
+</script>
+</body>
+  </html>
+  
